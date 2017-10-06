@@ -14,6 +14,9 @@
     .btn {
       border-width: 2px;
     }
+    .form-control {
+      border-width: 2px;
+    }
     .header-carousel-item {
       height: 450px;
     }
@@ -68,8 +71,8 @@
           </li>
         </ul>
         <form class="form-inline">
-          <a href="#" class="btn btn-outline-primary mr-1">登入</a>
-          <a href="#" class="btn btn-outline-primary">註冊</a>
+          <a href="#" class="btn btn-outline-primary mr-1" data-toggle="modal" data-target="#loginModal">登入</a>
+          <a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#registerModal">註冊</a>
         </form>
       </div>
     </div>
@@ -232,6 +235,199 @@
     </div>
   </section>
 
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.310714197928!2d120.2981136505643!3d22.604869485093374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e037799f9afb1%3A0xb9f297a86cf40dfb!2z6auY6ZuE6Luf6auU56eR5oqA5ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1507215913465" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6">
+          <form action="" id="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="username">姓名*</label>
+              <input type="text" class="form-control" id="username" placeholder="請輸入姓名" required>
+              <div class="invalid-feedback">
+                請輸入姓名
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tel">電話*</label>
+              <input type="tel" class="form-control" id="tel" placeholder="請輸入電話" required>
+              <div class="invalid-feedback">
+                請輸入電話
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" class="form-control" id="email" placeholder="請輸入 Email" required>
+              <div class="invalid-feedback">
+                請輸入 Email
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="number">輸入人數*</label>
+              <input type="number" class="form-control" id="number" placeholder="請輸入人數" required>
+              <div class="invalid-feedback">
+                請輸入人數
+              </div>
+            </div>
+            <div class="custom-controls-stacked">
+              <label class="custom-control custom-radio">
+                <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">需要素食</span>
+              </label>
+              <label class="custom-control custom-radio">
+                <input id="radioStacked4" name="radio-stacked" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">不需要素食</span>
+              </label>
+            </div>
+            <div class="text-right">
+              <button type="button" class="btn btn-secondary">取消</button>
+              <button type="submit" class="btn btn-primary">送出</button>
+            </div>
+          </form>
+          <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              "use strict";
+              window.addEventListener("load", function() {
+                var form = document.getElementById("needs-validation");
+                form.addEventListener("submit", function(event) {
+                  if (form.checkValidity() == false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add("was-validated");
+                }, false);
+              }, false);
+            }());
+            </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 p-4 bg-cover text-white" style="background-image: url(https://images.unsplash.com/photo-1484834762280-66a18a5a8f0b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
+        <div class="row">
+          <div class="col-md-9">
+            <small>加入我們</small>
+            <h3>你便乖乖的把琴抱進你的床去，你是不認識你父親的</h3>
+            <p>短暫的激情是不值錢的，年代的人還需要摔打，別人一定會聽你，但它只是一環，80年代的人不要跟70年代，別人可以拷貝我的模式，一個成功的創業者，東西得一點點幹，也要注重過程，千萬別告訴別人，賺錢模式越多越說明你沒有模式。</p>
+            <a href="#" class="btn btn-outline-warning">加入我們</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 p-4 bg-cover text-white" style="background-image: url(https://images.unsplash.com/photo-1476029764343-569b983f5785?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
+        <div class="row">
+          <div class="col-md-9">
+            <small>品嚐佳餚</small>
+            <h3>踏著浪，我和世界不一樣，太多堅持</h3>
+            <p>一度剝落了的青春，寂寞的床偌大的房，我和我的倔強不能在shopping時候想你在路上會­遇見怎樣的穹蒼？戀人之間的時光，怎麼又是你，都騎虎難下了，唉呀，環境維護的話，發牢騷之前，打架了，大家不要吵架，我再也不逃了，我們回去了，謝謝，最恐怖的人，既然媽媽決定了，就算是死，辣辣的，一定很好吃。</p>
+            <a href="#" class="btn btn-outline-warning">品嚐佳餚</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="p-5" style="color: #868E95">
+    © Copright 2017 六角學院
+    <a href="#">GitHub</a>
+    <a href="#">Facebook</a>
+    <a href="#">About</a>
+  </footer>
+
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginemail">Email</label>
+              <input type="email" id="loginemail" name="loginemail" class="form-control" placeholder="Enter email">
+              <small class="text-secondary">我們絕不會隨意將你的email給予第三者</small>
+            </div>
+            <div class="form-group">
+              <label for="loginpass">密碼</label>
+              <input type="password" name="loginpass" id="loginpass" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" id="loginremember" name="loginremember"> 記住帳號
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">還沒有帳號？</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-warning text-white">
+          <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>註冊六角西餐廳</h3>
+              <p>工藝演唱怪物素質怎麼樣家電是啊建設中華人民大門特殊一名小心模，沒什麼兩種符合分公司並沒有不如老大命令可以說濟南家裡不詳消費。</p>
+              <p>也在醫院是怎麼有限責任，上次之外驅動信息網各國配合城市是因為物業有限責任公司地，以及一會消失我看呵呵符合美容今後本公司安排去了諮詢正式職位，熱線沒有什麼夫妻參加工藝環保首次關於刪。</p>
+            </div>
+            <div class="col-sm-6">
+              <form>
+                <div class="form-group">
+                  <label for="registeremail">Email</label>
+                  <input type="email" id="registeremail" name="registeremail" class="form-control" placeholder="Enter email">
+                  <small class="text-secondary">我們絕不會隨意將你的email給予第三者</small>
+                </div>
+                <div class="form-group">
+                  <label for="registerpass">密碼</label>
+                  <input type="password" id="registerpass" name="registerpass" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label for="registerconfirmpass">確認密碼</label>
+                  <input type="password" id="registerconfirmpass" name="registerconfirmpass" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="checkbox" id="registeragree" name="registeragree"> 同意條款
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">已經有帳號了？</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
